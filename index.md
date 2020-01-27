@@ -2,7 +2,6 @@
   <head>
     <title>maddog1138</title>
     <meta content="">
-    <style></style>
   </head>
   <body>
   <div>Index page for github projects </div>
