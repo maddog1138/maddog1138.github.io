@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <base href="/" />
+  <base xxhref="/" />
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,26 +23,34 @@
 
 <body>
 
-
-  <div>Index page for github projects </div>
-  <div>
-    content will go below this line
+  <div id='pageTitle' class='titleBanner'>
+    <span>maddog1138.github.io</span>
   </div>
+
   <div id="cards" class="cardsContainer">
 
     <div id="card1" class="cardsItem">
       <div class="card-content">
+Some random text.
         <a href="https://maddog1138.github.io/tabbedcontainer/index.html">html & css tabbed content</a>
+
       </div>
     </div>
     <div id="card1" class="cardsItem">
       <div class="card-content">
+
         <a href="https://maddog1138.github.io/scrollingmaptest/index.html">scrolling map test</a>
+
       </div>
     </div>
 
 
   </div>
+
+  <app-root>
+    <script src="js/glowycards.js"></script>
+
+  </app-root>
 
 </body>
 
