@@ -7,7 +7,8 @@
 
 :root {
     --bg-color: rgb(25, 25, 25);
-    --card-color: rgba(30, 30, 30);
+    --title-color: rgb(35, 35, 35);
+    --card-color: rgba(30, 30, 30, 0.8);
     --font-color: rgb(184, 184, 184);
     scroll-behavior: smooth;
 }
@@ -32,10 +33,11 @@ body {
     width:100vw;
     margin: 1rem;
     justify-content:space-around;
-    background-color: var(--bg-color);
+    background-color: var(--title-color);
     color: var(--font-color);
     font-family: 'Urbanist', sans-serif;
     font-size: 4em;
+    font-weight: 300;
 
 }
 
@@ -87,7 +89,7 @@ body {
     opacity: 1;
 }
 
-.cardsContainer:hover>.cardsItem::after {
+.cardsContainer:hover>a>.cardsItem::after {
     opacity: 1;
 }
 
@@ -101,28 +103,43 @@ body {
     z-index: 1;
 }
 
+#card1>.card-content{
+    background-image: url('../img/tabbedcontainer.png');
+
+}
+
+#card2>.card-content{
+    background-image: url('../img/scrollingmaptest.png');
+}
+
+
 .cardsItem>.card-content {
     background-color: var(--card-color);
+    background-blend-mode: overlay;
+    background-size:cover;
     border-radius: inherit;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    inset: 2px;
+    inset: 3px;
     padding: 10px;
     position: absolute;
     z-index: 2;
 }
 
+
+
 .card-content {
     font-family:'Roboto Slab',sans-serif;
     color: var(--font-color);
     font-size: 1.5em;
+    font-weight: 400;
+    
 }
 
-.card-content>a{
-    outline:none;
+.cardsContainer>a{
     text-decoration:none;
-
+    display: block;
 }
 
 /* grid container */
